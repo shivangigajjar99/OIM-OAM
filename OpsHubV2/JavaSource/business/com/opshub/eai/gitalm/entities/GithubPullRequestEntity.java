@@ -100,11 +100,6 @@ public class GithubPullRequestEntity implements GithubEntityHandler {
 	}
 
 	@Override
-	public List<FieldsMeta> getFieldsMetadata() {
-		return GithubPullRequestFieldsMeta.getFieldsMetadata();
-	}
-
-	@Override
 	public MaxEntityCarrier getMaxUpdateTime(final Calendar afterTime) throws GithubConnectorException {
 
 		UrlBuilder urlBuilder = GithubUrlBuilderHandler
