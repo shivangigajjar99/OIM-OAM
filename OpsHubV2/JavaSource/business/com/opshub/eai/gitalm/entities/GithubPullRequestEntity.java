@@ -346,16 +346,6 @@ public class GithubPullRequestEntity implements GithubEntityHandler {
 
 		}
 
-		@Override
-		public void remove() {
-			AutomationDataHandler handler = AutomationDataHandler.getInstance(false);
-			if (handler.isAutomation() && CollectionUtils.isNotEmpty(pullRequests)) {
-				pullRequests.remove(0);
-			} else {
-				Iterator.super.remove();
-			}
-		}
-
 		private void initializePullRequests() {
 			LOGGER.debug("Initializing pull requests");
 			try {
