@@ -2,7 +2,7 @@
  * Copyright C 2019 OpsHub, Inc. All rights reserved
  */
 
-// Added one more comment here.
+// Added one more comment here
 package com.opshub.eai.gitalm.entities;
 
 import java.io.InputStream;
@@ -54,6 +54,7 @@ public class GithubCommitInformationEntity implements GithubEntityHandler {
 	private static final String UNCHECKED_ANNOTATION = "unchecked";
 	private final GithubRestRequester githubRestRequester;
 	private static final String USERNAME = "UserName";
+private static final String USERNAME2 = "UserName";
 
 	private final GithubConnectorService connectorService;
 	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
