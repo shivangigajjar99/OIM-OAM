@@ -108,7 +108,8 @@ public class GithubCommitInformationEntity implements GithubEntityHandler {
 		Calendar returnAfterTime = Calendar.getInstance();
 System.out.println("This is for diff");
 		returnAfterTime.setTimeInMillis(afterTime.getTimeInMillis());
-		String sha = "";
+String str = "";		
+String sha = "";
 		// fetch repository Name from id
 		String repoName = githubRestRequester.getRepoNameFromId();
 		// fetch all branches
