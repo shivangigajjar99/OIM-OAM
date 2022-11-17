@@ -1,3 +1,4 @@
+// Adding comment for branch0 diff
 package com.opshub.eai.gitalm.entities;
 
 import java.io.InputStream;
@@ -81,6 +82,8 @@ import com.opshub.logging.OpsHubLoggingUtil;
  * 
  */
 public class GithubPullRequestEntity implements GithubEntityHandler {
+
+	private static final String demo = "hello";
 
 	private static final String CREATED_USER = "user";
 
