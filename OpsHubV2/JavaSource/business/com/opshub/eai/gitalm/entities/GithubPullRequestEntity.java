@@ -87,6 +87,8 @@ public class GithubPullRequestEntity implements GithubEntityHandler {
 
 	private static final String CREATED_USER = "user";
 
+	private static final String CREATED_USER = "user2";
+
 	private final GithubRestRequester githubRestRequester;
 	private final GithubConnectorService connectorService;
 	private static final Logger LOGGER = Logger.getLogger(GithubPullRequestEntity.class);
