@@ -181,8 +181,7 @@ public class GithubRestRequester {
 			if (files.getStatus().equals(Operation.renamed.toString()))
 				fileLogMsgBean.setPreviousFileContentPath(files.getPrevious_filename());
 			else
-				fileLogMsgBean.setPreviousFileContentPath(files.getFilename());
-		}
+						}
 		return fileLogMsgBean;
 	}
 
@@ -771,13 +770,5 @@ public class GithubRestRequester {
 		return sendReadRequestWithoutPagination(urlBuilder, new TypeReference<GithubUser>() {});
 	}
 
-	/**
-	 * This method is getter method for connector context of the requester
-	 * 
-	 * @return
-	 */
-	public GithubConnectorContext getGithubConnectorContext() {
-		return this.connectorContext;
-	}
 
 }

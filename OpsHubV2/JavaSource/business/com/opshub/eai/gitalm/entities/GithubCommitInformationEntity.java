@@ -86,15 +86,6 @@ private static final String USERNAME2 = "UserName";
 	}
 
 	@Override
-	public CommentsMeta getCommentsMeta() {
-		CommentsMeta commentMeta = new CommentsMeta();
-		commentMeta.setSupportAsTargetSystem(true);
-		commentMeta.setSupportAsSourceSystem(true);
-		return commentMeta;
-
-	}
-
-	@Override
 	public List<EAIKeyValue> getAllCommentTypes() {
 		return Collections.emptyList();
 	}
