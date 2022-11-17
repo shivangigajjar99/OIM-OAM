@@ -771,13 +771,5 @@ public class GithubRestRequester {
 		return sendReadRequestWithoutPagination(urlBuilder, new TypeReference<GithubUser>() {});
 	}
 
-	/**
-	 * This method is getter method for connector context of the requester
-	 * 
-	 * @return
-	 */
-	public GithubConnectorContext getGithubConnectorContext() {
-		return this.connectorContext;
-	}
 
 }
