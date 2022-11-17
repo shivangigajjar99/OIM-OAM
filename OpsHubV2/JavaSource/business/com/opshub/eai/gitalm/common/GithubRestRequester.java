@@ -181,8 +181,7 @@ public class GithubRestRequester {
 			if (files.getStatus().equals(Operation.renamed.toString()))
 				fileLogMsgBean.setPreviousFileContentPath(files.getPrevious_filename());
 			else
-				fileLogMsgBean.setPreviousFileContentPath(files.getFilename());
-		}
+						}
 		return fileLogMsgBean;
 	}
 
