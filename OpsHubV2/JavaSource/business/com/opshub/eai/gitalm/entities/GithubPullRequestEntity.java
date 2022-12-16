@@ -2,6 +2,7 @@
 package com.opshub.eai.gitalm.entities;
 
 import java.io.InputStream;
+import java.io.InputStream;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -344,16 +345,6 @@ public class GithubPullRequestEntity implements GithubEntityHandler {
 				throw new OIMRunTimeException("Problem while getting scope id for pull request", e);
 			}
 
-		}
-
-		@Override
-		public void remove() {
-			AutomationDataHandler handler = AutomationDataHandler.getInstance(false);
-			if (handler.isAutomation() && CollectionUtils.isNotEmpty(pullRequests)) {
-				pullRequests.remove(0);
-			} else {
-				Iterator.super.remove();
-			}
 		}
 
 		private void initializePullRequests() {
