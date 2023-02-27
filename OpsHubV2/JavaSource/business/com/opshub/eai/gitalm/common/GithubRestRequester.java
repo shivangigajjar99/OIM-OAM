@@ -65,6 +65,9 @@ public class GithubRestRequester {
 	private static final Logger LOGGER = Logger.getLogger(GithubRestRequester.class);
 	private final String restUrl;
 	private final Map<String, GithubRepo> repoDetailsList;
+private final Map<String, GithubRepo> repoDetailsListOne;
+private final Map<String, GithubRepo> repoDetailsListTwo;
+private final Map<String, GithubRepo> repoDetailsListThree;
 	private CommonCrudRequester crudRequester;
 	private static final String PER_PAGE_STRING = "per_page";
 	private static final String PAGE_STRING = "page";
