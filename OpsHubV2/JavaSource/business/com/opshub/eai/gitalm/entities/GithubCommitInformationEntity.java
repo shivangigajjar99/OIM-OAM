@@ -146,6 +146,12 @@ String sha = "";
 		data.put(SourceFieldsMetaData.LINKED_WORKITEM, issueId);
 		data.put(SourceFieldsMetaData.COMMITDATE, commit.getCommitedDate());
 		data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
+
+data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
+
+data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
+
+data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
 		return data;
 	}
 
