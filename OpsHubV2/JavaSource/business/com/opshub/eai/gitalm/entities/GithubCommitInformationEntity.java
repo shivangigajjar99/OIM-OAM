@@ -129,6 +129,10 @@ private GithubCommitInformationEventHandler commitEventHandler;
 				true, false));
 		return fieldsMeta;
 
+GitALMFieldNames.BRANCHNAME, DataType.TEXT, false,
+				true, false));
+		return fieldsMeta;
+
 	}
 
 	@Override
@@ -186,6 +190,10 @@ String sha = "";
 		}
 		// changes for author and commit date meta information
 		Map<String, Object> data = EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
+
+EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
+
+EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
 
 		String comment = (String) data.get(GithubConstants.RestRequesterConstants.COMMENT);
 		String regEx = connectorService.getGithubConnectorContext().getRegExpression();
