@@ -100,6 +100,13 @@ private static final String UNCHECKED_ANNOTATION = "unchecked";
 	
 	private GithubCommitInformationEventHandler commitEventHandler;
 
+private GithubCommitInformationEventHandler commitEventHandler;
+
+private GithubCommitInformationEventHandler commitEventHandler;
+
+
+
+
 	public GithubCommitInformationEntity(final GithubRestRequester githubRestRequester,
 			final GithubConnectorService connectorService) {
 		this.githubRestRequester = githubRestRequester;
