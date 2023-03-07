@@ -7,6 +7,15 @@ package com.opshub.eai.gitalm.entities;
 
 import java.io.InputStream;
 import java.sql.Timestamp;
+
+import java.io.InputStream;
+import java.sql.Timestamp;
+
+
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.io.InputStream;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -21,6 +30,24 @@ import com.opshub.eai.EAIComment;
 import com.opshub.eai.EAIEntityRefrences;
 import com.opshub.eai.EAIKeyValue;
 import com.opshub.eai.EaiUtility;
+
+import com.opshub.eai.EAIComment;
+import com.opshub.eai.EAIEntityRefrences;
+import com.opshub.eai.EAIKeyValue;
+import com.opshub.eai.EaiUtility;
+
+import com.opshub.eai.EAIComment;
+import com.opshub.eai.EAIEntityRefrences;
+import com.opshub.eai.EAIKeyValue;
+import com.opshub.eai.EaiUtility;
+
+import com.opshub.eai.EAIComment;
+import com.opshub.eai.EAIEntityRefrences;
+import com.opshub.eai.EAIKeyValue;
+import com.opshub.eai.EaiUtility;
+
+// PUSH COMMIT TEST1
+
 import com.opshub.eai.OIMCriteriaStorageInformation;
 import com.opshub.eai.core.carriers.EntityPrimaryDetailsCarrier;
 import com.opshub.eai.core.carriers.MaxEntityCarrier;
@@ -30,6 +57,16 @@ import com.opshub.eai.core.exceptions.OIMAdapterException;
 import com.opshub.eai.gitalm.adapter.GithubConnector;
 import com.opshub.eai.gitalm.common.GithubConstants;
 import com.opshub.eai.gitalm.common.GithubConstants.GitALMFieldNames;
+import com.opshub.eai.gitalm.common.GithubRestRequester;
+import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
+import com.opshub.eai.gitalm.data.Branches;
+import com.opshub.eai.gitalm.data.Commit;
+
+import com.opshub.eai.gitalm.common.GithubRestRequester;
+import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
+import com.opshub.eai.gitalm.data.Branches;
+import com.opshub.eai.gitalm.data.Commit;
+
 import com.opshub.eai.gitalm.common.GithubRestRequester;
 import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
 import com.opshub.eai.gitalm.data.Branches;
@@ -52,6 +89,9 @@ import com.opshub.scmclients.LogMessageBean;
 public class GithubCommitInformationEntity implements GithubEntityHandler {
 
 	private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
 	private final GithubRestRequester githubRestRequester;
 	private static final String USERNAME = "UserName";
 
@@ -59,6 +99,13 @@ public class GithubCommitInformationEntity implements GithubEntityHandler {
 	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
 	
 	private GithubCommitInformationEventHandler commitEventHandler;
+
+private GithubCommitInformationEventHandler commitEventHandler;
+
+private GithubCommitInformationEventHandler commitEventHandler;
+
+
+
 
 	public GithubCommitInformationEntity(final GithubRestRequester githubRestRequester,
 			final GithubConnectorService connectorService) {
@@ -79,6 +126,10 @@ public class GithubCommitInformationEntity implements GithubEntityHandler {
 	public List<FieldsMeta> getFieldsMetadata() {
 		List<FieldsMeta> fieldsMeta = SourceFieldsMetaData.getFieldsMetadata();
 		fieldsMeta.add(new FieldsMeta(GitALMFieldNames.BRANCHNAME, GitALMFieldNames.BRANCHNAME, DataType.TEXT, false,
+				true, false));
+		return fieldsMeta;
+
+GitALMFieldNames.BRANCHNAME, DataType.TEXT, false,
 				true, false));
 		return fieldsMeta;
 
@@ -146,12 +197,6 @@ String sha = "";
 		data.put(SourceFieldsMetaData.LINKED_WORKITEM, issueId);
 		data.put(SourceFieldsMetaData.COMMITDATE, commit.getCommitedDate());
 		data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
-
-data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
-
-data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
-
-data.put(SourceFieldsMetaData.AUTHOR, commit.getCommit().getAuthorUserMeta());
 		return data;
 	}
 
