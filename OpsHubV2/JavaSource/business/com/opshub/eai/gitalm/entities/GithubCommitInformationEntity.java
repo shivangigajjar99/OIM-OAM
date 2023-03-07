@@ -191,6 +191,10 @@ String sha = "";
 		// changes for author and commit date meta information
 		Map<String, Object> data = EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
 
+EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
+
+EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
+
 		String comment = (String) data.get(GithubConstants.RestRequesterConstants.COMMENT);
 		String regEx = connectorService.getGithubConnectorContext().getRegExpression();
 		String issueId = GithubRestRequester.getTargetEntityIdByFindingRegex(comment, regEx);
@@ -205,6 +209,12 @@ String sha = "";
 	public Map<String, Object> getSystemProperties(final String internalId, final Object entityObject)
 			throws GithubConnectorException {
 		if (entityObject == null) {
+			return (Map<String, Object>) getEntityObject(internalId);
+if (entityObject == null) {
+			return (Map<String, Object>) getEntityObject(internalId);
+if (entityObject == null) {
+			return (Map<String, Object>) getEntityObject(internalId);
+if (entityObject == null) {
 			return (Map<String, Object>) getEntityObject(internalId);
 		}
 		return (Map<String, Object>) entityObject;
