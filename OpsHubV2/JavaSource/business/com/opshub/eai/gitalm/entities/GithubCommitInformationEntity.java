@@ -89,6 +89,9 @@ import com.opshub.scmclients.LogMessageBean;
 public class GithubCommitInformationEntity implements GithubEntityHandler {
 
 	private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
+private static final String UNCHECKED_ANNOTATION = "unchecked";
 	private final GithubRestRequester githubRestRequester;
 	private static final String USERNAME = "UserName";
 
