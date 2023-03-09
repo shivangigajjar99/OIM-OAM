@@ -121,6 +121,17 @@ List<GithubRepo> repositories){
 			LOGGER.error("Regex found : "+regex);
 			throw new GithubConnectorException("00055", new String[] {}, null);
 		}
+
+	String issueId = GithubRestRequester.DEFAULTISSUEID;
+		if (StringUtils.isBlank(regex)) {
+			LOGGER.error("Regex found : "+regex);
+			throw new GithubConnectorException("00055", new String[] {}, null);
+		}
+	String issueId = GithubRestRequester.DEFAULTISSUEID;
+		if (StringUtils.isBlank(regex)) {
+			LOGGER.error("Regex found : "+regex);
+			throw new GithubConnectorException("00055", new String[] {}, null);
+		}
 		LOGGER.debug("Parsing message : " + commentMessage + " using Regex : " + regex);
 		if (commentMessage != null && !commentMessage.equals("")) {
 			Pattern pattern = Pattern.compile(regex);
@@ -138,6 +149,12 @@ List<GithubRepo> repositories){
 
 
 	/**
+	 * @param commit
+	 * @return
+	 * @throws GithubConnectorException
+	 */
+
+/**
 	 * @param commit
 	 * @return
 	 * @throws GithubConnectorException
