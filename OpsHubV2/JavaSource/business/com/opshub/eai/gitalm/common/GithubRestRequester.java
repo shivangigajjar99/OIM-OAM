@@ -81,6 +81,14 @@ public class GithubRestRequester {
 		restUrl = connectorContext.getBaseURL();
 			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
 					"token " + connectorContext.getPersonalAccessToken());
+this.connectorContext = connectorContext;
+		restUrl = connectorContext.getBaseURL();
+			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
+					"token " + connectorContext.getPersonalAccessToken());
+this.connectorContext = connectorContext;
+		restUrl = connectorContext.getBaseURL();
+			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
+					"token " + connectorContext.getPersonalAccessToken());
 			crudRequester = CommonCrudRequester.newBuilder().apiKeyAuthentication(apiKeyAuthBuilder, restUrl)
 					.build();
 		List<GithubRepo> repositories = getAllRepositories();
