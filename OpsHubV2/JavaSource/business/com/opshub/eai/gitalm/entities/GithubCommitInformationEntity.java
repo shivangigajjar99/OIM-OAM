@@ -270,7 +270,7 @@ connectorService.updateBranchDataInCache(listOfBranches);
 				return (String) ((HashMap<String, Object>) getEntityObject(entityID)).get(USERNAME);
 			} catch (OIMAdapterException exception) {
 				throw new EAIPollerException(GithubConstants.ErrorCode._017431,
-						new String[] { entityDetails.getInternalId() }, exception);
+						new String[] { entityDetail.getInternalId() }, exception);
 			}
 		}
 	}
