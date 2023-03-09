@@ -99,6 +99,11 @@ this.connectorContext = connectorContext;
 		return repositories != null
 				? repositories.stream().collect(Collectors.toMap(GithubRepo::getId, repository -> repository))
 				: Collections.emptyMap();
+
+List<GithubRepo> repositories){
+		return repositories != null
+				? repositories.stream().collect(Collectors.toMap(GithubRepo::getId, repository -> repository))
+				: Collections.emptyMap();
 	}
 
 	/**
