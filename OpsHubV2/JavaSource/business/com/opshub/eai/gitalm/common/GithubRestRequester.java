@@ -1,8 +1,9 @@
 // Adding comment for branch0 diff
-// Adding
+// Adding one more comment for branch0 diff
 package com.opshub.eai.gitalm.common;
 
-import java.io.InputStream;
+
+// HOLD COMMIT ONE
 import java.io.InputStream;
 import java.sql.Timestamp;
 import java.time.Instant;
@@ -65,9 +66,6 @@ public class GithubRestRequester {
 	private static final Logger LOGGER = Logger.getLogger(GithubRestRequester.class);
 	private final String restUrl;
 	private final Map<String, GithubRepo> repoDetailsList;
-private final Map<String, GithubRepo> repoDetailsListOne;
-private final Map<String, GithubRepo> repoDetailsListTwo;
-private final Map<String, GithubRepo> repoDetailsListThree;
 	private CommonCrudRequester crudRequester;
 	private static final String PER_PAGE_STRING = "per_page";
 	private static final String PAGE_STRING = "page";
@@ -83,6 +81,14 @@ private final Map<String, GithubRepo> repoDetailsListThree;
 		restUrl = connectorContext.getBaseURL();
 			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
 					"token " + connectorContext.getPersonalAccessToken());
+this.connectorContext = connectorContext;
+		restUrl = connectorContext.getBaseURL();
+			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
+					"token " + connectorContext.getPersonalAccessToken());
+this.connectorContext = connectorContext;
+		restUrl = connectorContext.getBaseURL();
+			APIKeyAuthBuilder apiKeyAuthBuilder = new APIKeyAuthBuilder("Authorization",
+					"token " + connectorContext.getPersonalAccessToken());
 			crudRequester = CommonCrudRequester.newBuilder().apiKeyAuthentication(apiKeyAuthBuilder, restUrl)
 					.build();
 		List<GithubRepo> repositories = getAllRepositories();
@@ -90,6 +96,11 @@ private final Map<String, GithubRepo> repoDetailsListThree;
 	}
 
 	private Map<String,GithubRepo> processRepositories(final List<GithubRepo> repositories){
+		return repositories != null
+				? repositories.stream().collect(Collectors.toMap(GithubRepo::getId, repository -> repository))
+				: Collections.emptyMap();
+
+List<GithubRepo> repositories){
 		return repositories != null
 				? repositories.stream().collect(Collectors.toMap(GithubRepo::getId, repository -> repository))
 				: Collections.emptyMap();
@@ -106,6 +117,17 @@ private final Map<String, GithubRepo> repoDetailsListThree;
 	public static String getTargetEntityIdByFindingRegex(final String commentMessage, final String regex)
 			throws GithubConnectorException {
 		String issueId = GithubRestRequester.DEFAULTISSUEID;
+		if (StringUtils.isBlank(regex)) {
+			LOGGER.error("Regex found : "+regex);
+			throw new GithubConnectorException("00055", new String[] {}, null);
+		}
+
+	String issueId = GithubRestRequester.DEFAULTISSUEID;
+		if (StringUtils.isBlank(regex)) {
+			LOGGER.error("Regex found : "+regex);
+			throw new GithubConnectorException("00055", new String[] {}, null);
+		}
+	String issueId = GithubRestRequester.DEFAULTISSUEID;
 		if (StringUtils.isBlank(regex)) {
 			LOGGER.error("Regex found : "+regex);
 			throw new GithubConnectorException("00055", new String[] {}, null);
