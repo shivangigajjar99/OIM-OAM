@@ -1,18 +1,6 @@
 // Adding comment for branch0 diff
 package com.opshub.eai.gitalm.entities;
 
-import java.io.InputStream;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Comparator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,6 +25,24 @@ import java.util.stream.Collectors;
 
 =======
 
+// HOLD COMMIT TWO
+>>>>>>> 1e49689 (hold commit two)
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
+
+// HOLD COMMIT TWO
+>>>>>>> 1e49689 (hold commit two)
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
+
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
 // HOLD COMMIT TWO
 >>>>>>> 1e49689 (hold commit two)
 import org.apache.commons.collections.CollectionUtils;
