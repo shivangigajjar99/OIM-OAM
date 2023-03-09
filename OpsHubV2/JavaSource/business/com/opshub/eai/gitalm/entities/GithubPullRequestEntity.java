@@ -3,6 +3,22 @@ package com.opshub.eai.gitalm.entities;
 
 import java.io.InputStream;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -13,18 +29,28 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.Iterator;
+
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+=======
 
-// HOLD COMMIT TWO one
-import org.apache
+// HOLD COMMIT TWO
+>>>>>>> 1e49689 (hold commit two)
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
 
-// HOLD COMMIT TWO one// HOLD COMMIT TWO 
-// HOLD COMMIT TWO one// HOLD COMMIT TWO 
-// HOLD COMMIT TWO one// HOLD COMMIT TWO one.commons.collections.CollectionUtils;
+// HOLD COMMIT TWO
+>>>>>>> 1e49689 (hold commit two)
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
+import org.apache.log4j.Logger;
+// HOLD COMMIT TWO
+>>>>>>> 1e49689 (hold commit two)
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.log4j.Logger;
 
@@ -33,6 +59,10 @@ import com.opshub.eai.EAIComment;
 import com.opshub.eai.EAIEntityRefrences;
 import com.opshub.eai.EAIKeyValue;
 import com.opshub.eai.EAILinkEntityItem;
+import com.opshub.eai.OIMCriteriaStorageInformation;
+import com.opshub.eai.core.carriers.EntityPrimaryDetailsCarrier;
+import com.opshub.eai.core.carriers.MaxEntityCarrier;
+
 import com.opshub.eai.OIMCriteriaStorageInformation;
 import com.opshub.eai.core.carriers.EntityPrimaryDetailsCarrier;
 import com.opshub.eai.core.carriers.MaxEntityCarrier;
@@ -47,16 +77,6 @@ import com.opshub.eai.gitalm.common.GithubConstants.CommentTypeRequestParam;
 import com.opshub.eai.gitalm.common.GithubRestRequester;
 import com.opshub.eai.gitalm.common.GithubUrlBuilderHandler;
 import com.opshub.eai.gitalm.data.Commit;
-
-import com.opshub.eai.gitalm.common.GithubRestRequester;
-import com.opshub.eai.gitalm.common.GithubUrlBuilderHandler;
-import com.opshub.eai.gitalm.data.Commit;
-import com.opshub.eai.gitalm.common.GithubRestRequester;
-import com.opshub.eai.gitalm.common.GithubUrlBuilderHandler;
-import com.opshub.eai.gitalm.data.Commit;
-
-
-
 import com.opshub.eai.gitalm.data.GitHubComment;
 import com.opshub.eai.gitalm.data.GithubPullRequest;
 import com.opshub.eai.gitalm.data.GithubPullRequestSummary;
@@ -66,16 +86,6 @@ import com.opshub.eai.gitalm.exceptions.GithubEntityObjectNotFoundException;
 import com.opshub.eai.gitalm.exceptions.OIMGithubPollerException;
 import com.opshub.eai.gitalm.metadata.impl.GithubPullRequestFieldsMeta;
 import com.opshub.eai.metadata.AttachmentMeta;
-import com.opshub.eai.metadata.CommentsMeta;
-import com.opshub.eai.metadata.ExtendedCommentsMeta;
-import com.opshub.eai.metadata.FieldsMeta;
-import com.opshub.eai.metadata.UserMeta;
-
-import com.opshub.eai.metadata.CommentsMeta;
-import com.opshub.eai.metadata.ExtendedCommentsMeta;
-import com.opshub.eai.metadata.FieldsMeta;
-import com.opshub.eai.metadata.UserMeta;
-
 import com.opshub.eai.metadata.CommentsMeta;
 import com.opshub.eai.metadata.ExtendedCommentsMeta;
 import com.opshub.eai.metadata.FieldsMeta;
