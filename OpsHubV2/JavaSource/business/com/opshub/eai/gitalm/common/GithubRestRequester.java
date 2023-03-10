@@ -196,6 +196,13 @@ List<GithubRepo> repositories){
 		logMessage.setFileLogMessageBeans(fileLogBeanArray);
 		return logMessage;
 
+FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles());
+		logMessage.setFileLogMessageBeans(fileLogBeanArray);
+		return logMessage;
+FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles());
+		logMessage.setFileLogMessageBeans(fileLogBeanArray);
+		return logMessage;
+
 	}
 
 	/**
