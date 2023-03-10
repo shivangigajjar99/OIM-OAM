@@ -237,6 +237,13 @@ FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles())
 FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
 FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
 FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+
+
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
 		if (files != null) {
 			fileLogMsgBean.setFileName(files.getFilename());
 			fileLogMsgBean.setFileOperationType(getFileOpertaionType(files.getStatus()));
