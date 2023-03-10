@@ -3,23 +3,8 @@
  */
 
 // Added one more comment here.
-
-
-// Added one more comment here.
-
-
-// Added one more comment here.
 package com.opshub.eai.gitalm.entities;
 
-import java.io.InputStream;
-import java.sql.Timestamp;
-
-import java.io.InputStream;
-import java.sql.Timestamp;
-
-
-import java.io.InputStream;
-import java.sql.Timestamp;
 import java.io.InputStream;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -36,24 +21,6 @@ import com.opshub.eai.EAIComment;
 import com.opshub.eai.EAIEntityRefrences;
 import com.opshub.eai.EAIKeyValue;
 import com.opshub.eai.EaiUtility;
-
-import com.opshub.eai.EAIComment;
-import com.opshub.eai.EAIEntityRefrences;
-import com.opshub.eai.EAIKeyValue;
-import com.opshub.eai.EaiUtility;
-
-import com.opshub.eai.EAIComment;
-import com.opshub.eai.EAIEntityRefrences;
-import com.opshub.eai.EAIKeyValue;
-import com.opshub.eai.EaiUtility;
-
-import com.opshub.eai.EAIComment;
-import com.opshub.eai.EAIEntityRefrences;
-import com.opshub.eai.EAIKeyValue;
-import com.opshub.eai.EaiUtility;
-
-// PUSH COMMIT TEST1
-
 import com.opshub.eai.OIMCriteriaStorageInformation;
 import com.opshub.eai.core.carriers.EntityPrimaryDetailsCarrier;
 import com.opshub.eai.core.carriers.MaxEntityCarrier;
@@ -62,25 +29,7 @@ import com.opshub.eai.core.carriers.ProcessingCarrier;
 import com.opshub.eai.core.exceptions.OIMAdapterException;
 import com.opshub.eai.gitalm.adapter.GithubConnector;
 import com.opshub.eai.gitalm.common.GithubConstants;
-import com.opshub.eai.gitalm.common.GithubConstants.GitALMFieldNames;
-import com.opshub.eai.gitalm.common.GithubRestRequester;
-import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
-import com.opshub.eai.gitalm.data.Branches;
-import com.opshub.eai.gitalm.data.Commit;
-
-import com.opshub.eai.gitalm.common.GithubRestRequester;
-import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
-import com.opshub.eai.gitalm.data.Branches;
-import com.opshub.eai.gitalm.data.Commit;
-
-import com.opshub.eai.gitalm.common.GithubRestRequester;
-import com.opshub.eai.gitalm.common.SourceFieldsMetaData;
-import com.opshub.eai.gitalm.data.Branches;
-import com.opshub.eai.gitalm.data.Commit;
-import com.opshub.eai.gitalm.exceptions.GithubConnectorException;
-import com.opshub.eai.gitalm.exceptions.OIMGithubPollerException;
-import com.opshub.eai.gitalm.poller.GithubCommitInformationEventHandler;
-import com.opshub.eai.gitalm.poller.GithubCommitInformationEventHandler.GithubCommitInformationWindow;
+GithubCommitInformationWindow;
 import com.opshub.eai.metadata.AttachmentMeta;
 import com.opshub.eai.metadata.CommentsMeta;
 import com.opshub.eai.metadata.DataType;
@@ -95,9 +44,6 @@ import com.opshub.scmclients.LogMessageBean;
 public class GithubCommitInformationEntity implements GithubEntityHandler {
 
 	private static final String UNCHECKED_ANNOTATION = "unchecked";
-private static final String UNCHECKED_ANNOTATION = "unchecked";
-private static final String UNCHECKED_ANNOTATION = "unchecked";
-private static final String UNCHECKED_ANNOTATION = "unchecked";
 	private final GithubRestRequester githubRestRequester;
 	private static final String USERNAME = "UserName";
 
@@ -105,13 +51,6 @@ private static final String UNCHECKED_ANNOTATION = "unchecked";
 	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
 	
 	private GithubCommitInformationEventHandler commitEventHandler;
-
-private GithubCommitInformationEventHandler commitEventHandler;
-
-private GithubCommitInformationEventHandler commitEventHandler;
-
-
-
 
 	public GithubCommitInformationEntity(final GithubRestRequester githubRestRequester,
 			final GithubConnectorService connectorService) {
@@ -132,10 +71,6 @@ private GithubCommitInformationEventHandler commitEventHandler;
 	public List<FieldsMeta> getFieldsMetadata() {
 		List<FieldsMeta> fieldsMeta = SourceFieldsMetaData.getFieldsMetadata();
 		fieldsMeta.add(new FieldsMeta(GitALMFieldNames.BRANCHNAME, GitALMFieldNames.BRANCHNAME, DataType.TEXT, false,
-				true, false));
-		return fieldsMeta;
-
-GitALMFieldNames.BRANCHNAME, DataType.TEXT, false,
 				true, false));
 		return fieldsMeta;
 
@@ -176,6 +111,10 @@ String sha = "";
 		}
 		connectorService.updateBranchDataInCache(listOfBranches);
 		return new MaxEntityCarrier(sha, returnAfterTime, "");
+connectorService.updateBranchDataInCache(listOfBranches);
+		return new MaxEntityCarrier(sha, returnAfterTime, "");
+connectorService.updateBranchDataInCache(listOfBranches);
+		return new MaxEntityCarrier(sha, returnAfterTime, "");
 	}
 
 
@@ -196,10 +135,6 @@ String sha = "";
 		}
 		// changes for author and commit date meta information
 		Map<String, Object> data = EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
-
-EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
-
-EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
 
 		String comment = (String) data.get(GithubConstants.RestRequesterConstants.COMMENT);
 		String regEx = connectorService.getGithubConnectorContext().getRegExpression();
@@ -320,7 +255,7 @@ EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
 
 	@Override
 	public InputStream getAttachmentInputStream(final String attachmentURI) throws OIMAdapterException {
-		LOGGER.trace("Attachment is not supported for Commit Information entity.");
+		LOGGER.trace("Attachments are not supported for Commit Information entity.");
 		throw new UnsupportedOperationException("Attachment is not supported for Commit Information entity");
 	}
 
@@ -333,9 +268,9 @@ EaiUtility.eaiKeyValueToMap(listOfEaiKeyValue);
 		} else {
 			try {
 				return (String) ((HashMap<String, Object>) getEntityObject(entityID)).get(USERNAME);
-			} catch (OIMAdapterException e) {
+			} catch (OIMAdapterException exception) {
 				throw new EAIPollerException(GithubConstants.ErrorCode._017431,
-						new String[] { entityDetails.getInternalId() }, e);
+						new String[] { entityDetail.getInternalId() }, exception);
 			}
 		}
 	}

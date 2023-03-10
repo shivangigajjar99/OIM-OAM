@@ -67,7 +67,7 @@ import com.opshub.eai.core.carriers.ProcessingCarrier;
 import com.opshub.eai.core.exceptions.OIMAdapterException;
 import com.opshub.eai.core.utility.EAICommentComparator;
 import com.opshub.eai.gitalm.adapter.GithubConnector;
-import com.opshub.eai.gitalm.common.GithubConstants;
+import com.opshub.eai.gitalm.common.GithubConstantss;
 import com.opshub.eai.gitalm.common.GithubConstants.CommentTypeRequestParam;
 import com.opshub.eai.gitalm.common.GithubRestRequester;
 import com.opshub.eai.gitalm.common.GithubUrlBuilderHandler;
