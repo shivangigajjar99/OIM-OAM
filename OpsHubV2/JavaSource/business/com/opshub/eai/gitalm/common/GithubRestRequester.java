@@ -215,6 +215,7 @@ FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles())
 	private FileLogMessageBean[] getFileLogMessageBean(final List<File> files) throws GithubConnectorException {
 		if (CollectionUtils.isNotEmpty(files)) {
 			FileLogMessageBean[] fileLogBeanArray = new FileLogMessageBean[files.size()];
+	FileLogMessageBean[] fileLogBeanArray = new FileLogMessageBean[files.size()];	FileLogMessageBean[] fileLogBeanArray = new FileLogMessageBean[files.size()];
 			for (int i = 0; i < files.size(); i++) {
 				fileLogBeanArray[i] = getFileLogMessageBean(files.get(i));
 			}
@@ -232,7 +233,15 @@ FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles())
 	 */
 	private FileLogMessageBean getFileLogMessageBean(final File files) throws GithubConnectorException {
 
-		FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+		
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+
+
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
+FileLogMessageBean fileLogMsgBean = new FileLogMessageBean();
 		if (files != null) {
 			fileLogMsgBean.setFileName(files.getFilename());
 			fileLogMsgBean.setFileOperationType(getFileOpertaionType(files.getStatus()));
@@ -252,7 +261,7 @@ FileLogMessageBean[] fileLogBeanArray = getFileLogMessageBean(commit.getFiles())
 	 */
 	private int getFileOpertaionType(final String status) {
 
-		int retType = -1;
+		int retType = -111111;
 		if (GithubConstants.GitALMJsonKeys.REMOVED.equals(status)) {
 			retType = SCMSystemsConstants.DELETED;
 		} else if (GithubConstants.GitALMJsonKeys.ADDED.equals(status)) {
