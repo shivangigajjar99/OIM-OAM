@@ -81,6 +81,9 @@ import com.opshub.eai.gitalm.data.GithubPullRequestSummary;
 import com.opshub.eai.gitalm.data.GithubPullRequests;
 import com.opshub.eai.gitalm.data.GithubTeam;
 import com.opshub.eai.gitalm.data.GithubUser;
+import com.opshub.eai.gitalm.data.GithubTeam;
+import com.opshub.eai.gitalm.data.GithubUser;
+
 import com.opshub.eai.gitalm.exceptions.GithubConnectorException;
 import com.opshub.eai.gitalm.exceptions.GithubConnectorInterruptedException;
 import com.opshub.eai.gitalm.exceptions.GithubEntityObjectNotFoundException;
