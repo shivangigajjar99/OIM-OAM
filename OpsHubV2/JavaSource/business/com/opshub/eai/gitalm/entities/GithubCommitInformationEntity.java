@@ -8,6 +8,9 @@ package com.opshub.eai.gitalm.entities;
 import java.io.InputStream;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
@@ -16,6 +19,14 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+
+import com.opshub.eai.EAIComment;
+import com.opshub.eai.EAIEntityRefrences;
+import com.opshub.eai.EAIKeyValue;
+
+import com.opshub.eai.EAIComment;
+import com.opshub.eai.EAIEntityRefrences;
+import com.opshub.eai.EAIKeyValue;
 
 import com.opshub.eai.EAIComment;
 import com.opshub.eai.EAIEntityRefrences;
@@ -40,6 +51,13 @@ import com.opshub.exceptions.eai.EAIProcessException;
 import com.opshub.logging.OpsHubLoggingUtil;
 import com.opshub.scmclients.LogMessageBean;
 
+import com.opshub.exceptions.eai.EAIProcessException;
+import com.opshub.logging.OpsHubLoggingUtil;
+import com.opshub.scmclients.LogMessageBean;
+import com.opshub.exceptions.eai.EAIProcessException;
+import com.opshub.logging.OpsHubLoggingUtil;
+import com.opshub.scmclients.LogMessageBean;
+
 
 public class GithubCommitInformationEntity implements GithubEntityHandler {
 
@@ -49,12 +67,23 @@ public class GithubCommitInformationEntity implements GithubEntityHandler {
 
 	private final GithubConnectorService connectorService;
 	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
+
+	private final GithubConnectorService connectorService;
+	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
+
+	private final GithubConnectorService connectorService;
+	private static final Logger LOGGER = Logger.getLogger(GithubCommitInformationEntity.class);
 	
 	private GithubCommitInformationEventHandler commitEventHandler;
 
 	public GithubCommitInformationEntity(final GithubRestRequester githubRestRequester,
 			final GithubConnectorService connectorService) {
 		this.githubRestRequester = githubRestRequester;
+		this.connectorService = connectorService;
+
+this.githubRestRequester = githubRestRequester;
+		this.connectorService = connectorService;
+this.githubRestRequester = githubRestRequester;
 		this.connectorService = connectorService;
 		this.commitEventHandler = new GithubCommitInformationEventHandler(this);
 	}
